@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca5bf71cf9286956a133bfc4c27ba5b7",
+    "hash": "bd7b2c41b634d722d394593cfe19eee7",
     "packages": [
         {
             "name": "cmfcmf/openweathermap-php-api",
@@ -51,85 +51,26 @@
             "time": "2015-03-21 13:42:03"
         },
         {
-            "name": "deralex/yaml-config-service-provider",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/deralex/YamlConfigServiceProvider.git",
-                "reference": "5923f60e6fbb16432e47310cf9680fe658c8dc0e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/deralex/YamlConfigServiceProvider/zipball/5923f60e6fbb16432e47310cf9680fe658c8dc0e",
-                "reference": "5923f60e6fbb16432e47310cf9680fe658c8dc0e",
-                "shasum": ""
-            },
-            "require": {
-                "silex/silex": ">=1.0 <=1.3",
-                "symfony/yaml": "~2.4"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "2.0.*@dev"
-            },
-            "suggest": {
-                "symfony/yaml": "~2.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "DerAlex\\Silex": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander Kluth",
-                    "email": "contact@alexanderkluth.com"
-                }
-            ],
-            "description": "Silex ServiceProvider for using YAML configuration files",
-            "keywords": [
-                "silex"
-            ],
-            "time": "2015-03-10 12:58:27"
-        },
-        {
-            "name": "mplachta/stp-silex-statusboard",
+            "name": "mplachta/stp-statusboard-base",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mplachta/stp-silex-statusboard.git",
-                "reference": "f8703a50caae3e9dc1896b0e68f4ff7ebb49032f"
+                "url": "https://github.com/mplachta/stp-statusboard-base.git",
+                "reference": "a804f92ef3119255233a0251bd61a624da39d9ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mplachta/stp-silex-statusboard/zipball/f8703a50caae3e9dc1896b0e68f4ff7ebb49032f",
-                "reference": "f8703a50caae3e9dc1896b0e68f4ff7ebb49032f",
+                "url": "https://api.github.com/repos/mplachta/stp-statusboard-base/zipball/a804f92ef3119255233a0251bd61a624da39d9ba",
+                "reference": "a804f92ef3119255233a0251bd61a624da39d9ba",
                 "shasum": ""
             },
             "require": {
-                "deralex/yaml-config-service-provider": "1.0.*",
-                "silex/silex": "1.2.*",
                 "twig/twig": "1.9.*"
-            },
-            "require-dev": {
-                "phpmd/phpmd": "2.2.*",
-                "sebastian/phpcpd": "2.0.*",
-                "squizlabs/php_codesniffer": "2.3.*"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "StpBoard\\Base\\": "src",
-                    "StpBoard\\Clock\\": "src"
+                    "StpBoard\\Base\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -142,14 +83,8 @@
                     "email": "michal.plachta@schibsted.pl"
                 }
             ],
-            "description": "simple silex statusboard",
-            "keywords": [
-                "dashboard",
-                "schibsted",
-                "status",
-                "stp"
-            ],
-            "time": "2015-04-10 08:26:13"
+            "description": "Base classes for STP StatusBoard Project",
+            "time": "2015-04-10 10:52:08"
         },
         {
             "name": "pimple/pimple",
@@ -639,56 +574,6 @@
             "time": "2015-03-30 15:54:10"
         },
         {
-            "name": "symfony/yaml",
-            "version": "v2.6.6",
-            "target-dir": "Symfony/Component/Yaml",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Yaml.git",
-                "reference": "174f009ed36379a801109955fc5a71a49fe62dd4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/174f009ed36379a801109955fc5a71a49fe62dd4",
-                "reference": "174f009ed36379a801109955fc5a71a49fe62dd4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.6-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Yaml\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-30 15:54:10"
-        },
-        {
             "name": "twig/twig",
             "version": "v1.9.2",
             "source": {
@@ -742,7 +627,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mplachta/stp-silex-statusboard": 20
+        "mplachta/stp-statusboard-base": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

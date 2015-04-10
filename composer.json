@@ -9,7 +9,8 @@
     }
   ],
   "require": {
-    "mplachta/stp-silex-statusboard": "dev-master",
+    "silex/silex": "1.2.*",
+    "mplachta/stp-statusboard-base": "dev-master",
     "cmfcmf/openweathermap-php-api": "2.0.*"
   },
   "autoload": {

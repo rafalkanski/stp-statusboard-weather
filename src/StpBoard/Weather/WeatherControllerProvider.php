@@ -3,7 +3,6 @@
 namespace StpBoard\Weather;
 
 use Cmfcmf\OpenWeatherMap;
-use Guzzle\Http\Client;
 use Silex\Application;
 use Silex\ControllerCollection;
 use Silex\ControllerProviderInterface;
@@ -38,7 +37,6 @@ class WeatherControllerProvider implements ControllerProviderInterface, BoardPro
             '/',
             function (Application $app) {
                 $request = $app['request'];
-                $data = [];
 
                 $city = $request->get('city');
                 if (empty($city)) {
